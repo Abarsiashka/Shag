@@ -1,0 +1,46 @@
+p{
+    color: yellow;
+    font-size: 130%;
+    text-align: center;
+}
+header{
+    text-align: justify;
+    height: 6em;
+    padding: 2em 1em;
+    background: #73C8FF;
+    color: #fff;
+    overflow: hidden;
+}
+header .logo{
+    display: block;
+    max-width: 15em;
+    width: 100%;
+    float: left;
+}
+.logo img{
+    width: 100%;
+}
+footer{
+    height: 6em;
+    padding: 2em 1em;
+    background: #0956B4;
+    position: fixed;
+    width: 100%;
+    bottom: 0.5em;
+    left: 0em;
+}
+button{
+  display: inline-block;
+  background: none;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+button:hover { background: white; }
+button:active { background: none; }
