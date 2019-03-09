@@ -44,3 +44,18 @@ button{
 }
 button:hover { background: white; }
 button:active { background: none; }
+.block{
+   height: 60em;
+   background-img: ("image/champion-kayle-Morgana-splash.jpg")
+}
+.h2{
+    font-size: 60px;
+    font-family: 'Scada', sans-serif;
+    color: goldenrod;
+    text-align: center;
+}
+.h3{
+    font-size: 35px;
+    color: saddlebrown;
+    font-family: "Roboto Slab",sans-serif;
+}
