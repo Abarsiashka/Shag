@@ -4,32 +4,66 @@
     <meta charset="UTF-8">
     <title>Wrapper</title>
     {% load staticfiles %}
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&subset=cyrillic');
         @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext');
         @import url('https://fonts.googleapis.com/css?family=Scada:700&subset=cyrillic,cyrillic-ext');
         @import url('https://fonts.googleapis.com/css?family=Comfortaa:700&subset=cyrillic,cyrillic-ext');
+        @import url(https://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
     </style>
 </head>
 <body>
+{% load staticfiles %}
 <header>
     <div class="header">
         {%load static%}
         <a href="/" class="logo"><img src="{% static "image/lolac.png"%}"></a>
+        {%block forma %}<a href="" class="button1 log">LOG IN</a>
+        <a href="register/" class="button1 sign">SIGN UP</a>{%endblock%}
+
+    </div>
+    <div>
 
     </div>
 
 </header>
 <main>
-    {%load static%}
-<div class="block">
+<div class="block">{%block Wrapper%}
+    <br>
+    <br>
     <h2>WELCOME!</h2>
     <h3>TRY IT YOURSELF!</h3>
+    <div class="register_now">
+        <a href="register/" class="button">REGISTER NOW! <i class="icon-chevron-right"></i></a>
+    </div>
+    <div class="wrapper">
+	<input type="radio" name="point" id="slide1" checked>
+	<input type="radio" name="point" id="slide2">
+	<input type="radio" name="point" id="slide3">
+	<input type="radio" name="point" id="slide4">
+	<input type="radio" name="point" id="slide5">
+	<div class="slider">
+		<div class="slides slide1"></div>
+		<div class="slides slide2"></div>
+		<div class="slides slide3"></div>
+		<div class="slides slide4"></div>
+		<div class="slides slide5"></div>
+	</div>
+	<div class="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+</div>{%endblock%}
+
 
 </div>
 </main>
 <footer class="footer">
+    <h4>© Created by Illia Chaikovskiy</h4>
 
 </footer>
 

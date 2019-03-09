@@ -10,6 +10,7 @@ header{
     background: #73C8FF;
     color: #fff;
     overflow: hidden;
+    position: relative;
 }
 header .logo{
     display: block;
@@ -24,12 +25,12 @@ footer{
     height: 6em;
     padding: 2em 1em;
     background: #0956B4;
-    position: fixed;
     width: 100%;
     bottom: 0.5em;
-    left: 0em;
+    left: -1em;
 }
-button{
+a.button1{
+  font-size: 20px;
   display: inline-block;
   background: none;
   color: white;
@@ -42,20 +43,259 @@ button{
   border-radius: 1px;
   transition: 0.2s;
 }
-button:hover { background: white; }
-button:active { background: none; }
+a.button1:hover { background: goldenrod; }
+a.button1:active { background: goldenrod; }
 .block{
    height: 60em;
-   background-img: ("image/champion-kayle-Morgana-splash.jpg")
+   background: url("https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-champion-update-kayle-morgana/en_US/c4e75bae5aad81eb1db68c38b64af56007aecf23/assets/img/content/hero-desktop.jpg");
+   background-size: cover ;
+   width: 100%
 }
-.h2{
+h2{
     font-size: 60px;
     font-family: 'Scada', sans-serif;
-    color: goldenrod;
+    color: #B0E0E6;
     text-align: center;
 }
-.h3{
+h3{
     font-size: 35px;
-    color: saddlebrown;
+    position:relative;
+    color: goldenrod;
     font-family: "Roboto Slab",sans-serif;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: -3.5em;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    color: #B0E0E6;
+    text-align: center;
+
+}
+.register_now{
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 39em;
+}
+.sign{
+    float: right;
+    position: relative;
+    right: 2 em;
+}
+.log{
+    position: absolute;
+    left: 73.5em;
+    top: 4.5em;
+}
+a.button{
+        font-size: 40px;
+		background: #ECECEC;
+		border-radius: 15px;
+		padding: 10px 20px;
+		display: block;
+		font-family: arial;
+		font-weight: bold;
+		color:#7f7f7f;
+		text-decoration: none;
+		text-shadow:0px 1px 0px #fff;
+		border:1px solid #a7a7a7;
+		width: 350px;
+		margin:0px auto;
+		margin-top:100px;
+		box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+a.button i{
+		float: right;
+		margin-top: 2px;
+	}
+a.button:hover{
+		box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	}
+a.button:active{
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+		background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+}
+.form-row {
+    border:10 px;
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.form-row input {
+    border:10 px;
+    font-family: 'Roboto Slab', sans-serif;
+	float: right;
+	height: 19px;
+	line-height: 19px;
+	margin: 0px;
+	padding: 0px 5px;
+	width: 287px;
+	border: 1px solid #ABADB3;
+}
+
+.reg-form {
+    border: 50px solid white;
+    border-right: 2px;
+    border-left: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    font-family: 'Comfortaa', sans-serif;
+	width: 450px;
+	position: relative;
+	top: 5em;
+	margin: 0 auto;
+	background-color: #73C8FF;
+
+
+}
+.form-row textarea {
+	height: 90px;
+    line-height: 16px;
+    font-size: 12px;
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 0px 5px;
+    width: 404px;
+    border: 1px solid #ABADB3;
+}
+
+.form-row input[type=submit] {
+	padding:5px;
+	height:25px;
+	width:100%;
+	line-height: 10px;
+	background: #337AB7;
+	color:white;
+}
+
+.form-row input[type=submit]:hover {
+	background:#286090;
+}
+.register{
+    width: 100%;
+    height: 30 em;
+    background-colour: white;
+    background-image: none;
+
+}
+.wrapper {
+	height: 350px;
+	margin: 300px auto 0;
+	position: relative;
+	width: 700px;
+}
+
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.wrapper > input {
+	display: none;
+}
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+.slide1 { background-image: url(https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/noxus_splash.jpg);
+ background-size: cover}
+.slide2 { background-image: url(https://universe-meeps.leagueoflegends.com/v1/assets/images/void-an-unknowable-power.jpg); background-size: cover}
+.slide3 { background-image: url(https://am-a.akamaihd.net/image?f=https%3A%2F%2Funiverse-meeps.leagueoflegends.com%2Fv1%2Fassets%2Fimages%2Fmttargon-four-seasons.jpg&resize=:1200); background-size: cover}
+.slide4 { background-image: url(https://am-a.akamaihd.net/image?f=https%3A%2F%2Funiverse-meeps.leagueoflegends.com%2Fv1%2Fassets%2Fimages%2Ffactions%2Fimage-gallery%2Fdemacia-silvermere.jpg&resize=:1200);background-size: cover }
+.slide5 { background-image: url(https://universe-meeps.leagueoflegends.com/v1/assets/images/factions/freljord_splash.jpg); background-size: cover}
+wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ddd;
+}
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
 }
